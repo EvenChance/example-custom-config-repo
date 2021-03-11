@@ -1,13 +1,6 @@
 # do not rename this or change path
 DEVICE_PACKAGE_OVERLAYS += vendor/custom/vendor/overlay/common
 
-# MicroG
-PRODUCT_PACKAGES += \
-    GmsCore \
-    GsfProxy \
-    FakeStore \
-    com.google.android.maps.jar
-
 # Seedvault
 PRODUCT_PACKAGES += \
     Seedvault
