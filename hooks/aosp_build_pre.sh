@@ -2,10 +2,6 @@
 
 cd "${AOSP_BUILD_DIR}"
 
-# apply microg sigspoof patch
-echo "applying microg sigspoof patch"
-patch -p1 --no-backup-if-mismatch < "platform/prebuilts/microg/00002-microg-sigspoof.patch"
-
 # apply community patches
 echo "applying community patch 00001-global-internet-permission-toggle.patch"
 community_patches_dir="${ROOT_DIR}/community_patches"
