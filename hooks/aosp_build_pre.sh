@@ -11,7 +11,7 @@ patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00001-global-inter
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00002-round-icon.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00003-enable-volte-wifi-calling.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00004-use-cloudflare-dns.patch"
-patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/90000-move-statusbar-clock-back-to-rhs.patch"
+patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/90000-move-statusbar-clock-back-to-rhs.patch.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/90001-increase-binder-proxy-counting-watermarks.patch"
 
 
