@@ -6,3 +6,7 @@
 # git clone https://github.com/GrapheneOS/Vanadium.git "${vanadium_dir}"
 # cd "${CHROMIUM_BUILD_DIR}/src"
 # git am --whitespace=nowarn ${vanadium_dir}/patches/*.patch
+
+# Stop WebRCT leaking
+cd "${CHROMIUM_BUILD_DIR}/src"
+sed -i 's/kWebRTCIPHandlingDefault/kWebRTCIPHandlingDisableNonProxiedUdp/g' ./chrome/browser/ui/browser_ui_prefs.cc
